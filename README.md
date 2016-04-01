@@ -4,7 +4,7 @@
 
 * All extras prototypes in lib dir.
 * All engine's primitives setup in engine dir.
-* Sample Game is based on a Smario a like.
+* Sample Game is based on a SMario a like.
 
 A lot of fun and time spent to make me crazy.
 
