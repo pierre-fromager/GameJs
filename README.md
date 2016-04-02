@@ -62,3 +62,13 @@ Todo :
 * Implement multi players.
 * Implement Viewport to detect screen dimensions.
 * Find the max Terrain dimensions applying the corresponding scale factor from Viewport.
+
+Compatibility :
+
+* Tested on platform : Andoid, Linux, OsX.
+* Working on Firefox, Chrome, Chromium, Iceweasel, Safari.
+
+Bugs :
+
+* Audio may be disabled on unsupported Webaudio browsers.
+
