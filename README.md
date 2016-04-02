@@ -6,12 +6,13 @@ Description :
 
 * Sample Game is SMario alike.
 * No HTML5 Canvas , Dom used only.
-* Css3 transformation effect, sprites as block background img.
+* Css3 transformation effect, sprite as block background.
 
 Organisation :
 
 * Root tree contains 2 html files (index for small, big for big maze).
-* All js resources in \public.
+* All js and css resources in \public folder.
+* All css in css folder.
 * All extras prototypes in js\lib dir.
 * All engine's prototypes in js\engine dir.
 * Audios asset in asset\audio.
