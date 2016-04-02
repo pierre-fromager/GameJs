@@ -10,7 +10,7 @@ Description :
 * No extra dependancies js framework required.
 * Js resources loaded from Html page.
 
-Organisation :
+Organization :
 
 * Root tree contains 2 html files (index for small, big for big maze).
 * All js and css resources in \public folder.
