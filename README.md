@@ -7,6 +7,8 @@ Description :
 * Sample Game is SMario alike.
 * No HTML5 Canvas , Dom used only.
 * Css3 transformation effect, sprite as block background.
+* No extra dependancies js framework required.
+* Js resources loaded from Html page.
 
 Organisation :
 
@@ -48,4 +50,8 @@ Initialization :
 
 * init.js (small design with manual terrain).
 * initbig.js (large design with map maze based).
+
+Todo :
+
+* Setup Js class Namespacing.
 
