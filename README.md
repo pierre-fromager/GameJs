@@ -10,9 +10,16 @@ A lot of fun and time spent to make me crazy.
 
 Engine resources :
 
-Mains :
-
-* Terrain ().
+* Terrain.
 * Character.
 * Scene.
+
+Concept :
+
+* One Terrain by level.
+* N Terrains in Scene.
+* N Characters in Scene.
+* Character may be a player or an autonoumous cell.
+* Autonomous Characters are blind and ask terrain to move.
+* Characters have memory and they learn their error.
 
