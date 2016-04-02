@@ -35,6 +35,8 @@ Engine resources :
 Concept :
 
 * One Terrain by level.
+* Terrain contains elements such as empty (e) or questable.
+* Terrain has 1 entrance and 1 exit.
 * N Terrains in Scene.
 * N Characters in Scene.
 * Character may be a player or an autonoumous cell.
@@ -45,6 +47,8 @@ Concept :
 * Scene on each update sort Characters list by speed.
 * Scene skip some ticks timer and give priority to the player.
 * Scene is managing each Character as a thread with priority given by speed.
+* Scene let the player change level and terrain once quest is reached.
+* Character player is controlled by keyboard by direction key.
 
 Initialization :
 
@@ -54,4 +58,6 @@ Initialization :
 Todo :
 
 * Setup Js class Namespacing.
+* Implement various controlers to let the player be controled by orientation on mobile device.
+* Implement multi players.
 
