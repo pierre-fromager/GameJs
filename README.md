@@ -72,3 +72,7 @@ Bugs :
 
 * Audio may be disabled on unsupported Webaudio browsers.
 
+Extensions :
+
+* Concept may be used in a non oriented game (graphical) features; for instance a case study for spread mechanism with constraints. 
+
