@@ -10,9 +10,12 @@ Description :
 
 Organisation :
 
+* Root tree contains 2 html files (index for small, big for big maze).
+* All js resources in \public.
 * All extras prototypes in js\lib dir.
 * All engine's prototypes in js\engine dir.
 * Audios asset in asset\audio.
+* Init js files in js\game.
 
 Engine resources :
 
