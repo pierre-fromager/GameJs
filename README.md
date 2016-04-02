@@ -6,7 +6,7 @@ Description :
 
 * Sample Game is SMario alike.
 * No HTML5 Canvas , Dom used only.
-* Css3 transformation effect, sprite as block background.
+* Css3 transformations transitions as scale, keyframes...; sprite defined by simple block background.
 * No extra dependancies js framework required.
 * Js resources loaded from Html page.
 
@@ -60,4 +60,5 @@ Todo :
 * Setup Js class Namespacing.
 * Implement various controlers to let the player be controled by orientation on mobile device.
 * Implement multi players.
-
+* Implement Viewport to detect screen dimensions.
+* Find the max Terrain dimensions applying the corresponding scale factor from Viewport.
