@@ -1,0 +1,47 @@
+/**
+* Spin keyframe mean rotate element 360deg
+*/
+/*
+@-moz-keyframes spin {
+    100% { -moz-transform: rotateZ(90deg); } 
+}*/
+@-webkit-keyframes spin {
+    100% { -webkit-transform: rotateY(360deg);}
+}
+
+@keyframes spin {
+    100% { -webkit-transform: rotateY(360deg);transform:rotateY(360deg); } 
+}
+
+/**
+* Scaler keyframe mean scale element from half to init
+*/
+@-moz-keyframes scaler {
+    100% { -moz-transform: scale(0.5); } 
+}
+@-webkit-keyframes scaler {
+    100% { -webkit-transform: scale(0.5); }
+}
+@keyframes scaler {
+    100% { -webkit-transform: scale(0.5); transform:scale(0.5); } 
+}
+
+/**
+* AnimatedBackground keyframe mean scroll bg position
+*/
+@keyframes animatedBackground {
+    from { background-position: 0 0; } to { background-position: 100% 0; }
+}
+
+@-webkit-keyframes animatedBackground {
+    from { background-position: 0 0; } to { background-position: 100% 0; }
+}
+
+@-ms-keyframes animatedBackground {
+    from { background-position: 0 0; } to { background-position: 100% 0; }
+}
+
+@-moz-keyframes animatedBackground {
+    from { background-position: 0 0; } to { background-position: 100% 0; }
+}
+

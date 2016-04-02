@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+    color:white;
+    margin: 0;
+    padding: 0;
+    font-family: arcadeclassicregular;
+}
+
+#info{
+    font-family: verdana;
+    display : block;
+    position : relative;
+    top : 0;
+    right: 1em;
+    float : right;
+    font-size: 0.8em;
+}
+
+#info, .label{
+    color:grey;
+
+}
+
+#info, .value{
+    color:lime;
+}
+
+#gameOver{
+    display : none;
+    position : fixed;
+    float : left;
+    width : 50%;
+    top : 2.4em;
+    left : -0.3em;
+    text-align : center;
+    font-size : 4em;
+    color : red;
+    z-index : 2;
+    font-weight : bold;
+}

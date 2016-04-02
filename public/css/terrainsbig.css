@@ -1,0 +1,54 @@
+.terrains{
+    float:left;
+    /*width:1260px;height:1260px;*/
+    position: absolute;
+    left:0;
+    top:0;
+    background: url('../img/terrain/grass.jpg') repeat ;
+    transform-origin: 0 0;
+    transform: scale(0.5);
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: scale(0.5);
+    -moz-transform-origin: 0 0;
+    -moz-transform: scale(0.5);
+    -o-transform-origin: 0 0;
+    -o-transform: scale(0.5);
+    -ms-transform-origin: 0 0;
+    -ms-transform: scale(0.5);
+    -khtml-transform: scale(0.5);
+
+    /*
+    marging: 0 0 0 0;
+    padding: 0 0 0 0;
+    */
+    
+    /*
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    */
+}
+
+.element{
+    width:60px;
+    height:60px;
+    float:left;
+    
+    /*
+    -webkit-transform-style: preserve-3d; 
+    -moz-transform-style: preserve-3d; 
+    -o-transform-style: preserve-3d; 
+    transform-style: preserve-3d;
+    */
+    
+    
+    -moz-box-shadow: 0px 0px 2px rgba(0,0,0,0.3);
+    -khtml-box-shadow: 0px 0px 2px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0px 0px 2px rgba(0,0,0,0.3);
+    
+    /*
+    -moz-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    */
+}

@@ -1,0 +1,54 @@
+.character{
+    width:60px;
+    height:60px;
+    display: block;
+    position : fixed;
+    z-index: 1;
+}
+
+.b,.w{
+    background: url('../img/characters/60x60/wall.jpg') repeat center;
+}
+.c{background: url('../img/characters/60x60/doubleCherry.png') no-repeat ;}
+.d{
+    background: url('../img/characters/60x60/diamond.png') no-repeat ;
+    -webkit-animation:scaler 3s ease-in-out infinite;
+    -moz-animation:scaler 3s ease-in-out infinite;
+    animation:scaler 3s ease-in-out infinite;
+}
+.f{background: url('../img/characters/60x60/boomerangFlower.png') no-repeat;}
+.g{background: url('../img/characters/60x60/megaMushroom.png') no-repeat;}
+.h{background: url('../img/characters/60x60/superBell.png') no-repeat;}
+.l{background: url('../img/characters/60x60/invincibilityLeaf.png') no-repeat;}
+.m{background: url('../img/characters/60x60/superMushroom.png') no-repeat ;}
+.p{background: url('../img/characters/60x60/fireFlower.png') no-repeat ;}
+.s{background: url('../img/characters/60x60/superStar.png') no-repeat;}
+.t{
+    background: url('../img/characters/60x60/heart.png') no-repeat;
+    -webkit-animation:scaler 1.5s linear infinite;
+    -moz-animation:scaler 1.5s linear infinite;
+    animation:scaler 1.5s linear infinite;
+}
+.u{background: url('../img/characters/60x60/superBell.png') no-repeat;}
+.x{background: url('../img/characters/60x60/goomba.png') no-repeat;}
+.n{
+    background: url('../img/characters/60x60/coin.png') no-repeat;
+    -webkit-animation:spin 5s linear infinite;
+    -moz-animation:spin 5s linear infinite;
+    animation:spin 5s linear infinite;
+}
+
+.i{
+    background: url('../img/characters/60x60/door.png') no-repeat;
+}
+.o{
+    background: url('../img/characters/60x60/door.png') no-repeat;
+}
+
+.bulletr{
+    background: url('../img/characters/60x60/bullet-r.png') no-repeat;
+}
+
+.bulletl{
+    background: url('../img/characters/60x60/bullet-l.png') no-repeat;
+}
