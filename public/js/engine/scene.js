@@ -207,11 +207,7 @@ Scene.update = function(){
                 frame % (Scene.characters[i].speed * Math.pow(Scene.characters.length,2 - Scene.level))
             );
             //var speedRatio = 1 + Math.round(Scene.characters[i].speed * 33.3);
-            if (!isPlayer && ticker != 0){
-                continue
-            } else {
-                
-            };
+            if (isPlayer == false && !ticker == 0) continue;
             var rulesAccept = Scene.characters[i].isMovable(terrainElement);
             movableCoord.accept = rulesAccept;
             movableCoord.element = terrainElement;
