@@ -4,13 +4,13 @@
  * 
  * Maps Maze built (one map by Level).
  **/
-var terrainRows = terrainCols = 6;
+var terrainRows = terrainCols = 12;
 
 var maps = [
     new Maze(terrainRows , terrainCols , 1, 1).map
-    /*, new Maze(terrainRows / 3, terrainCols / 3, 1, 1).map
-    , new Maze(terrainRows / 2, terrainCols / 2, 1, 1).map
-    , new Maze(terrainRows, terrainCols, 1, 1).map*/
+    , new Maze(terrainRows , terrainCols , 1, 1).map
+    , new Maze(terrainRows , terrainCols , 1, 1).map
+    , new Maze(terrainRows , terrainCols , 1, 1).map
 ];
 
 var terrainId = 'terrain00', tileSize = 60;
@@ -128,7 +128,7 @@ var init = function(){
         ]
     );
     Audio.init();
-    Audio.enabled = false;
+    Audio.enabled = true;
     Info.init('info');
     Scene.setSpeed(1000);
     Scene.setFps(60);
