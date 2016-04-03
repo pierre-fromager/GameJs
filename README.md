@@ -60,7 +60,6 @@
 * Setup Js class Namespacing.
 * Implement various controlers to let the player be controled by orientation on mobile device.
 * Implement multi players.
-* Implement Viewport to detect screen dimensions.
 * Find the max Terrain dimensions applying the corresponding scale factor from Viewport.
 
 ### Compatibility
