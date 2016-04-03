@@ -1,8 +1,8 @@
 # GameJs
 
-2D Fast Javascript Game Engine with concise sample.
+## 2D Fast Javascript Game Engine with concise sample.
 
-Description :
+### Description
 
 * Sample Game is SMario alike.
 * No HTML5 Canvas , Dom used only.
@@ -10,7 +10,7 @@ Description :
 * No extra dependancies js framework required.
 * Js resources loaded from Html page.
 
-Organization :
+### Organization
 
 * Root tree contains 2 html files (index for small, big for big maze).
 * All js and css resources in \public folder.
@@ -20,7 +20,7 @@ Organization :
 * Audios asset in asset\audio.
 * Init js files in js\game.
 
-Engine resources :
+### Resources
 
 * Terrain (Manual mapped or automatic mazed designed - Instanciation).
 * Character (Identified by an id and a kind - Instanciation).
@@ -32,7 +32,7 @@ Engine resources :
 * Key (Keyboard manager - Static).
 * Ticker (Fast timer - Singleton).
 
-Concept :
+### Concept
 
 * One Terrain by level.
 * Terrain contains elements such as empty (e) or questable.
@@ -50,12 +50,12 @@ Concept :
 * Scene let the player change level and terrain once quest is reached.
 * Character player is controlled by keyboard by direction key.
 
-Initialization :
+### Initialization
 
 * init.js (small design with manual terrain).
 * initbig.js (large design with map maze based).
 
-Todo :
+### Todo
 
 * Setup Js class Namespacing.
 * Implement various controlers to let the player be controled by orientation on mobile device.
@@ -63,16 +63,16 @@ Todo :
 * Implement Viewport to detect screen dimensions.
 * Find the max Terrain dimensions applying the corresponding scale factor from Viewport.
 
-Compatibility :
+### Compatibility
 
 * Tested on platform : Andoid, Linux, OsX.
 * Working on Firefox, Chrome, Chromium, Iceweasel, Safari.
 
-Bugs :
+### Bugs
 
 * Audio may be disabled on unsupported Webaudio browsers.
 
-Extensions :
+### Extensions
 
 * Concept may be used in a non oriented game (graphical) features; for instance a case study for spread mechanism with constraints. 
 
