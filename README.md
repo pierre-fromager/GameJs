@@ -12,7 +12,9 @@
 
 ### Organization
 
-* Root tree contains 2 html files (index for small, big for big maze).
+* Root tree contains 2 html files.
+* Root index.html is fixed dimension and map.
+* Root big.html is dynamic dimension with maze generation.
 * All js and css resources in \public folder.
 * All css in css folder.
 * All extras prototypes in js\lib dir.
