@@ -4,9 +4,16 @@ body{
     margin: 0;
     padding: 0;
     font-family: arcadeclassicregular;
+    overflow: hidden;
+    
 }
 
 #info{
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    background: url('../img/terrain/grass.jpg') repeat;
+    -moz-box-shadow: 0px 0px 2px rgba(0,0,0,0.3);
+    -khtml-box-shadow: 0px 0px 2px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0px 0px 2px rgba(0,0,0,0.3);
     font-family: verdana;
     display : block;
     position : relative;
@@ -17,7 +24,7 @@ body{
 }
 
 #info, .label{
-    color:grey;
+    color:white;
 
 }
 
