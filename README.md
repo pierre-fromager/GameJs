@@ -1,6 +1,6 @@
 # GameJs
 
-## 2D Fast Javascript Game Engine with concise sample.
+## 2D Fast Javascript Game Engine.
 
 ### Description
 
