@@ -1,10 +1,23 @@
+/**
+ * Viewport
+ * 
+ */
+Viewport.bind();
+Viewport.reserve = 0;
+Viewport.init();
 
 /**
  * Terrain - Definition
  * 
  * Maps Maze built (one map by Level).
  **/
-var terrainRows = terrainCols = 12;
+var tileSize = 60;
+
+var maxTiles = (Viewport.width > Viewport.height) ? Viewport.height  : Viewport.width;
+
+maxTiles = Math.floor(maxTiles / tileSize);
+
+var terrainRows = terrainCols = maxTiles;
 
 var maps = [
     new Maze(terrainRows , terrainCols , 1, 1).map
@@ -13,7 +26,7 @@ var maps = [
     , new Maze(terrainRows , terrainCols , 1, 1).map
 ];
 
-var terrainId = 'terrain00', tileSize = 60;
+var terrainId = 'terrain00';
 var terrainOptions = {
     id : terrainId
     , width : tileSize + ((terrainCols * 2) * tileSize)
@@ -131,7 +144,7 @@ var init = function(){
     Audio.enabled = true;
     Info.init('info');
     Scene.setSpeed(1000);
-    Scene.setFps(60);
+    Scene.setFps(10);
     Scene.terrain = terrain;
     Scene.setTerrainMaps(maps);
     Scene.characters = [mushroom, megamushroom, goomba,flower, cherry, electrabell];
