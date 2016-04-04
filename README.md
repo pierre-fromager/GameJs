@@ -57,6 +57,12 @@
 * init.js (small design with manual terrain).
 * initbig.js (large design with map maze based).
 
+### Environments
+
+* [Stable](https://intellique.pier-infor.fr/gamejs/GameJs-Github/big.html)
+* [Unstable](https://intellique.pier-infor.fr/gamejs/big.html)
+* [Qunit tests](https://intellique.pier-infor.fr/gamejs/GameJs-Github/test.html)
+
 ### Todo
 
 * Setup Js class Namespacing.
