@@ -68,7 +68,40 @@
                 );
             });
             QUnit.test('String.prototype.replaceArrayLit', function( assert ) {
-                assert.ok( Scene.running == false, 'Passed!' );
+                assert.equal(
+                    'abcabcabc'.replaceArrayLit(['ab','c'], ['de','f'])
+                    , 'defdefdef'
+                );
+                assert.equal(
+                    '012012012012'.replaceArrayLit(['0', '1', '2'], ['1','b','z'])
+                    , 'bbzbbzbbzbbz'
+                );
+                assert.equal(
+                    '#abc!'.replaceArrayLit(['#', 'abc', '!'], ['.','s','.'])
+                    , '.s.'
+                );
+                assert.equal(
+                    '#abc!#abc!#abc!'.replaceArrayLit(
+                        ['#', 'abc', '!']
+                        , ['.','s','.']
+                    )
+                    , '.s..s..s.'
+                );
+                assert.equal(
+                    '#abc!#abc!#abc!'.replaceArrayLit(
+                        ['#', 'abc', '!', '.']
+                        , ['.','s','.', 'x']
+                    )
+                    , 'xsxxsxxsx'
+                ); 
+                assert.equal(
+                    '#...!'.replaceArrayLit(['#', '.', '!'], ['.','s','.'])
+                    , 'ssss.'
+                );
+                assert.equal(
+                    '+iii'.replaceArrayLit(['\\+', 'iii'], ['b','i'])
+                    , '+i'
+                );
             });
             QUnit.test('String.prototype.splitLength', function( assert ) {
                 assert.ok( Scene.running == false, 'Passed!' );
