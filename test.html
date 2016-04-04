@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>QUnit gameJs Testing</title>
+        <link rel="stylesheet" href="public/css/qunit/qunit-1.23.0.css">
+        <script src="public/js/vendor/qunit/qunit-1.23.0.js"></script>
+        <script type="text/javascript" src="public/js/lib/string.js"></script>
+        <script type="text/javascript" src="public/js/lib/number.js"></script>
+        <script type="text/javascript" src="public/js/lib/array.js"></script>
+        <script type="text/javascript" src="public/js/lib/object.js"></script>
+        <script type="text/javascript" src="public/js/lib/function.js"></script>
+        <script type="text/javascript" src="public/js/lib/randomgen.js"></script>
+        <script type="text/javascript" src="public/js/lib/dom.js"></script>
+        <script type="text/javascript" src="public/js/lib/maze.js"></script>
+        <script type="text/javascript" src="public/js/engine/key.js"></script>
+        <script type="text/javascript" src="public/js/engine/direction.js"></script>
+        <script type="text/javascript" src="public/js/engine/movement.js"></script>
+        <script type="text/javascript" src="public/js/engine/character.js"></script>
+        <script type="text/javascript" src="public/js/engine/terrain.js"></script>
+        <script type="text/javascript" src="public/js/engine/oscilator.js"></script>
+        <script type="text/javascript" src="public/js/engine/ticker.js"></script>
+        <script type="text/javascript" src="public/js/engine/info.js"></script>
+        <script type="text/javascript" src="public/js/engine/audio.js"></script>
+        <script type="text/javascript" src="public/js/engine/viewport.js"></script>
+        <script type="text/javascript" src="public/js/engine/scene.js"></script>
+        <script type="text/javascript" src="public/js/game/initbig.js"></script>
+    </head>
+    <body>
+        <div id="qunit"></div>
+        <div id="qunit-fixture"></div>
+        <script>
+            QUnit.test('String.prototype.replaceArray', function( assert ) {
+                assert.equal(
+                    'abcabcabc'.replaceArray(['ab','c'], ['de','f'])
+                    , 'defdefdef'
+                );
+                assert.equal(
+                    '012012012012'.replaceArray(['0', '1', '2'], ['1','b','z'])
+                    , 'bbzbbzbbzbbz'
+                );
+                assert.equal(
+                    '#abc!'.replaceArray(['#', 'abc', '!'], ['.','s','.'])
+                    , '.s.'
+                );
+                assert.equal(
+                    '#abc!#abc!#abc!'.replaceArray(
+                        ['#', 'abc', '!']
+                        , ['.','s','.']
+                    )
+                    , '.s..s..s.'
+                );
+                assert.equal(
+                    '#abc!#abc!#abc!'.replaceArray(
+                        ['#', 'abc', '!', '.']
+                        , ['.','s','.', 'x']
+                    )
+                    , 'xxxxxxxxx'
+                ); 
+                assert.equal(
+                    '#...!'.replaceArray(['#', '.', '!'], ['.','s','.'])
+                    , 'sssss'
+                );
+                assert.equal(
+                    '+iii'.replaceArray(['\\+', 'iii'], ['b','i'])
+                    , 'bi'
+                );
+            });
+            QUnit.test('String.prototype.replaceArrayLit', function( assert ) {
+                assert.ok( Scene.running == false, 'Passed!' );
+            });
+            QUnit.test('String.prototype.splitLength', function( assert ) {
+                assert.ok( Scene.running == false, 'Passed!' );
+            });
+            // String.prototype.replaceArray
+            // String.prototype.replaceArrayLit
+            // String.prototype.splitLength
+        </script>
+    </body>
+</html>
