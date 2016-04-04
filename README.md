@@ -62,6 +62,7 @@
 * Setup Js class Namespacing.
 * Implement various controlers to let the player be controled by orientation on mobile device.
 * Implement multi players.
+* Unit tests using Qunit.
 
 ### Compatibility
 
