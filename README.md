@@ -72,7 +72,7 @@
 
 ### Compatibility
 
-* Tested on platform : Andoid, Linux, OsX.
+* Tested on platform : Android, Linux, OsX.
 * Working on Firefox, Chrome, Chromium, Iceweasel, Safari.
 
 ### Bugs
