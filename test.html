@@ -63,7 +63,7 @@
                     , 'sssss'
                 );
                 assert.equal(
-                    '+iii'.replaceArray(['\\+', 'iii'], ['b','i'])
+                    '+iii'.replaceArray(['[+]', 'iii'], ['b','i'])
                     , 'bi'
                 );
             });
@@ -99,16 +99,24 @@
                     , 'ssss.'
                 );
                 assert.equal(
-                    '+iii'.replaceArrayLit(['\\+', 'iii'], ['b','i'])
-                    , '+i'
+                    '+iii'.replaceArrayLit(['+', 'iii'], ['b','i'])
+                    , 'bi'
                 );
             });
             QUnit.test('String.prototype.splitLength', function( assert ) {
-                assert.ok( Scene.running == false, 'Passed!' );
+                assert.deepEqual(
+                    '++ii'.splitLength(2)
+                    , ['++', 'ii']
+                );
+                assert.deepEqual(
+                    '++ii--abc'.splitLength(2)
+                    , ['++', 'ii','--','ab','c']
+                );
+                assert.deepEqual(
+                    '++ii--abc'.splitLength(4)
+                    , ['++ii','--ab','c']
+                );
             });
-            // String.prototype.replaceArray
-            // String.prototype.replaceArrayLit
-            // String.prototype.splitLength
         </script>
     </body>
 </html>
