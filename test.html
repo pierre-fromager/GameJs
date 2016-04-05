@@ -117,6 +117,84 @@
                     , ['++ii','--ab','c']
                 );
             });
+            QUnit.test('RandomGen.getIntMinMax', function( assert ) {
+                var generator = {};
+                RandomGen.call(generator);
+                assert.equal(
+                    generator.getIntMinMax(0,0)
+                    , 0
+                );
+                assert.equal(
+                    generator.getIntMinMax(10000,10000)
+                    , 10000
+                );
+                assert.ok(
+                    generator.getIntMinMax(5,10) > 5
+                    , 'okay'
+                );
+                assert.ok(
+                    generator.getIntMinMax(5,10) <= 10
+                    , 'okay'
+                );
+                assert.ok(
+                    generator.getIntMinMax(5,10) > 5 
+                        && generator.getIntMinMax(5,10) <= 10
+                    , 'okay'
+                );
+            });
+            QUnit.test('Array.prototype.shuffle', function( assert ) {
+                var testArray = ['x','y','z'];
+                assert.ok(
+                    testArray.shuffle().length == 3
+                    , 'okay'
+                );
+                assert.ok(
+                    testArray.shuffle().indexOf('x') != -1 
+                        && testArray.shuffle().indexOf('y') != -1
+                        && testArray.shuffle().indexOf('z') != -1
+                    , 'okay'
+                );
+                assert.equal(
+                    testArray.shuffle()
+                    , testArray
+                );
+            });
+            QUnit.test('Array.prototype.first', function( assert ) {
+                assert.ok(
+                    ['x','y','z'].first().length == 1
+                    , 'okay'
+                );
+                assert.ok(
+                    ['x','y','z'].first() === 'x'
+                    , 'okay'
+                );
+                assert.ok(
+                    [].first() === false
+                    , 'okay'
+                );
+            });
+            QUnit.test('Array.prototype.erase ', function( assert ) {
+                assert.deepEqual(
+                    ['x','y','z'].erase('x')
+                    , ['y','z']
+                );
+                assert.deepEqual(
+                    ['x','y','z'].erase('y')
+                    , ['x','z']
+                );
+                assert.deepEqual(
+                    ['x','y','z'].erase('z')
+                    , ['x','y']
+                );
+                assert.deepEqual(
+                    [0,0,1,2].erase(0)
+                    , [0,1,2]
+                );
+                assert.deepEqual(
+                    [true,false,false,true].erase(false)
+                    , [true,false,true]
+                );
+            });
         </script>
     </body>
 </html>
